@@ -1,5 +1,5 @@
-template-repository (1.0-1) unstable; urgency=medium
+rust-smartstring (1.0.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Package smartstring 1.0.1 from crates.io using debcargo 2.6.1
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Alexander Kjäll <alexander.kjall@gmail.com>  Mon, 29 Jan 2024 10:54:54 +0100

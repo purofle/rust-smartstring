@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --all-features
+Features: test-name=rust-smartstring:@
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --no-default-features --features arbitrary
+Features: test-name=librust-smartstring-dev:arbitrary
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets
+Features: test-name=librust-smartstring-dev:default
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --no-default-features --features proptest
+Features: test-name=librust-smartstring-dev:proptest
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --no-default-features --features serde
+Features: test-name=librust-smartstring-dev:serde
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --no-default-features --features std
+Features: test-name=librust-smartstring-dev:std
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --no-default-features --features test
+Features: test-name=librust-smartstring-dev:test
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smartstring 1.0.1 --all-targets --no-default-features
+Features: test-name=librust-smartstring-dev:
+Depends: dh-cargo (>= 18), librust-criterion-0.3+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
